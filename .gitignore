@@ -1,0 +1,30 @@
+# 環境變數（含密碼，不上傳；範本見 .env.example）
+.env
+
+# Python
+.venv/
+__pycache__/
+*.py[oc]
+.ipynb_checkpoints/
+
+# 編輯器設定
+.vscode/
+
+# Windows 服務（WinSW）執行檔與 log
+*.exe
+*.log
+*.log.old
+*.log_.old
+
+# 資料庫 volume
+pgdata/
+
+# 案場原始監控資料匯出
+data.json
+
+# Office 暫存檔
+~$*
+
+# 業主文件
+說明手冊.txt
+重新訓練預測模型_操作說明.docx

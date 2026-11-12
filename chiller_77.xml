@@ -1,0 +1,11 @@
+<service>
+  <id>chiller_77</id>
+  <name>chiller_77</name>
+  <description>chiller_77</description>
+  <executable>.venv\scripts\python.exe</executable>
+  <arguments>-m uvicorn app:app --host 127.0.0.1 --port 8000</arguments>
+  <log mode="roll"></log>
+  <!-- 程式啟動失敗或當掉時，30 秒後自動重新啟動 -->
+  <onfailure action="restart" delay="30 sec"/>
+  <startmode>Automatic</startmode>
+</service>
